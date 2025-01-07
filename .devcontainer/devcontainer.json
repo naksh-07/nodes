@@ -1,0 +1,14 @@
+{
+  "name": "Ubuntu 22.04 Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "ms-vscode.vscode-node-azure-pack",
+    "ms-python.python"
+  ],
+  "remoteUser": "dev"
+}
