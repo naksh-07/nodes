@@ -1,14 +1,13 @@
 {
-  "name": "Ubuntu 22.04 Dev Environment",
+  "name": "VPS-Like Codespace",
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-  "extensions": [
-    "ms-vscode.vscode-node-azure-pack",
-    "ms-python.python"
-  ],
-  "remoteUser": "dev"
+  "postCreateCommand": "bash /scripts/setup_gui.sh",
+  "forwardPorts": [6080],
+  "remoteUser": "codespace"
 }
+
